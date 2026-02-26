@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Scholaris</title>
         <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
         <div class="topbar">
-            <span class="logo">Scholar<span>is</span>
+            <span class="logo">Scholar<span>is</span></span>
             <span class="score-badge" id="lscore">0/0</span>
         </div>
         <div class="sub-bar">
@@ -18,5 +19,21 @@
         <div class="prog-wrap">
             <div class="prog-bar" id="prog-bar" style="width:40%;"></div>
         </div>
+
+        <main>
+            <div class="deck-area">
+                <div class="cards-wpr">
+                    <div class="card back-2"></div>
+                    <div class="card back-1"></div>
+                    <div class="card front">
+                        <span class="empty-label">No available quizzes. Create some!</span>
+                    </div>
+                </div>
+                <button class="btn-acard">
+                    <span class="material-icons">add</span>
+                    Create quiz
+                </button>
+            </div>
+        </main>
     </body>
 </html>

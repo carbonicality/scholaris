@@ -98,3 +98,94 @@ body {
     width:0%;
     transition: width 0.4s ease;
 }
+
+main {
+    max-width:780px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.deck-area {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cards-wpr {
+    position: relative;
+    width:340px;
+    height:200px;
+}
+
+.card {
+    position: absolute;
+    width:100%;
+    height:100%;
+    border-radius: 14px;
+    background: var(--white);
+    border:1.5px solid #e0ddd6;
+}
+
+.back-2 {
+    background: #d4e8cf;
+    border-color:#c0d8bb;
+    z-index: 1;
+    transform: rotate(3deg);
+}
+
+.back-1 {
+    background:#e4f0e0;
+    border-color: #cfe3ca;
+    z-index:2;
+    transform: rotate(1.5deg);
+}
+
+.front {
+    z-index: 3;
+    box-shadow: var(--shadow);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.empty-label {
+    font-size: 0.85rem;
+    color:#aaa;
+    letter-spacing: 0.03em;
+}
+
+.btn-acard {
+    font-family:'Exo 2',sans-serif;
+    font-size: 0.88rem;
+    font-weight:600;
+    letter-spacing: 0.06em;
+    background:var(--teal);
+    color:var(--white);
+    border:none;
+    border-radius:8px;
+    padding: 0.75rem 2.5rem;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap: 0.5rem;
+    box-shadow: 0 3px 0 #031f24;
+    position:relative;
+    top: 0;
+    transition: background 0.2s, box-shadow 0.15s, top 0.1s;
+}
+
+.btn-acard:hover {
+    background: #084d57;
+    box-shadow: 0 4px 0 #031f24;
+    top:-1px;
+}
+
+.btn-acard:active {
+    box-shadow: 0 1px 0 #031f24;
+    top:2px;
+}
+
+.btn-acard .material-icons {
+    font-size:1.1rem;
+}
