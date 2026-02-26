@@ -11,3 +11,90 @@
     --shadow: 0 2px 12px rgba(6,52,59,0.08);
     --shadow-hvr: 0 4px 24px rgba(6,52,59,0.13);
 }
+
+*, *::before, *::after {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family:'Hanken Grotesk',sans-serif;
+    background: var(--owhite);
+    color: var(--dark);
+    min-height: 100vh;
+}
+
+.topbar {
+    background: var(--white);
+    padding: 0 2.5rem;
+    height: 58px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #e0ddd6;
+}
+
+.logo {
+    font-family:'Play',sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--teal);
+}
+
+.logo span {
+    color: var(--green);
+}
+
+.score-badge {
+    font-family:'Play',sans-serif;
+    font-size: 0.78rem;
+    background: var(--lgreen);
+    border: 1.5px solid #b6e0a0;
+    color: var(--green);
+    padding: 0.3rem 0.85rem;
+    border-radius: 20px;
+    letter-spacing:0.03em;
+}
+
+.sub-bar {
+    background: #eef6eb;
+    border-bottom: 1px solid var(--border);
+    padding: 0 2.5rem;
+    height: 36px;
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top: 58px;
+    z-index: 99;
+}
+
+.lesson-name {
+    font-family:'Hanken Grotesk',sans-serif;
+    font-size:0.8rem;
+    font-weight: 500;
+    color:#666;
+    letter-spacing: 0.02em;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.prog-wrap {
+    height:3px;
+    background:var(--border);
+    position:sticky;
+    top:94px;
+    z-index:98;
+}
+
+.prog-bar {
+    height:100%;
+    background:var(--green);
+    width:0%;
+    transition: width 0.4s ease;
+}
