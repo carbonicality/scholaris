@@ -1,0 +1,13 @@
+:root {
+    --white: #fff;
+    --owhite: #dcebd7;
+    --dark: #373737;
+    --green: #1a6600;
+    --lgreen: #e8f5e2;
+    --teal: #06343b;
+    --red: #8b0000;
+    --lred: #fdeaea;
+    --border: #c5dfc0;
+    --shadow: 0 2px 12px rgba(6,52,59,0.08);
+    --shadow-hvr: 0 4px 24px rgba(6,52,59,0.13);
+}
